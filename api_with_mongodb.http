@@ -1,0 +1,6 @@
+@api_with_mongodb_HostAddress = http://localhost:5088
+
+GET {{api_with_mongodb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

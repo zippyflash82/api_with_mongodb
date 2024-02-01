@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "I05EtMCADpMTHTkaxB7aa2yYt6Jg64qSgB3JTCbWDQs=",
+  "Source": "api_with_mongodb",
+  "BasePath": "_content/api_with_mongodb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
