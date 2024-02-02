@@ -289,3 +289,5 @@
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.pdb
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.genruntimeconfig.cache
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/ref/api_with_mongodb.dll
+/Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.sourcelink.json
+/Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

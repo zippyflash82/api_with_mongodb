@@ -16,8 +16,11 @@ namespace mongo_db_demo.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Product>().ToCollection("products");
+            modelBuilder.Entity<UserModel>().ToCollection("users");
         }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<UserModel> Users { get; set; }
     }
 }

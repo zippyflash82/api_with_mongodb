@@ -8,11 +8,16 @@ using Microsoft.EntityFrameworkCore;
 using api_with_mongodb.Models;
 using mongo_db_demo.Data;
 using api_with_mongodb.Data;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authorization;
 
 namespace api_with_mongodb.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly MongoContext _context;
@@ -130,5 +135,34 @@ namespace api_with_mongodb.Controllers
         {
             return (_context.Products?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+
+        // private string GenerateJSONWebToken(UserModel userInfo)
+        // {
+        //     var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+        //     var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+        //     var token = new JwtSecurityToken(_config["Jwt:Issuer"],
+        //       _config["Jwt:Issuer"],
+        //       null,
+        //       expires: DateTime.Now.AddMinutes(120),
+        //       signingCredentials: credentials);
+
+        //     return new JwtSecurityTokenHandler().WriteToken(token);
+        // }
+
+
+        // private UserModel AuthenticateUser(UserModel login)
+        // {
+        //     UserModel user = null;
+
+        //     //Validate the User Credentials
+        //     //Demo Purpose, I have Passed HardCoded User Information
+        //     if (login.USERNAME == "Jignesh")
+        //     {
+        //         user = new UserModel { USERNAME = "Jignesh Trivedi", EmailAddress = "test.btest@gmail.com" };
+        //     }
+        //     return user;
+        // }
     }
 }
