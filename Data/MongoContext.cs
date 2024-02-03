@@ -9,7 +9,6 @@ namespace mongo_db_demo.Data
     {
         public MongoContext(DbContextOptions<MongoContext> options) : base(options)
         {
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -18,6 +17,15 @@ namespace mongo_db_demo.Data
             modelBuilder.Entity<Product>().ToCollection("products");
             modelBuilder.Entity<UserModel>().ToCollection("users");
         }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     if (!optionsBuilder.IsConfigured)
+        //     {
+        //         optionsBuilder.UseMongoDB("mongodb://localhost:27017", "productsdb");
+        //     }
+        // }
+
+
 
         public DbSet<Product> Products { get; set; }
 

@@ -27,21 +27,32 @@ namespace api_with_mongodb.Controllers
         [HttpPost("register")]
         public async Task<ActionResult> Signup(SignupDto signupDto)
         {
-            if (_context.Users == null)
+            if (ModelState.IsValid)
             {
-                return Problem("Entity set 'MongoContext.Products'  is null.");
-            }
-            var tempUserModel = new UserModel
-            {
-                Id = _context.Users.Count() + 1,
-                USERNAME = signupDto.USERNAME,
-                Password = signupDto.Password,
-                EmailAddress = signupDto.EmailAddress
-            };
-            _context.Users.Add(tempUserModel);
-            await _context.SaveChangesAsync();
+                if (_context.Users == null)
+                {
+                    return Problem("Entity set 'MongoContext.Products'  is null.");
+                }
+                var tempUserModel = new UserModel
+                {
+                    Id = _context.Users.Count() + 1,
+                    Name = signupDto.FirstName + signupDto.LastName,
+                    Email = signupDto.Email,
+                    Gender = signupDto.Gender,
+                    Password = signupDto.Password,
+                    SignUpDate = DateTime.Now,
+                    Username = signupDto.Username
 
-            return Ok("New User Created");
+                };
+                _context.Users.Add(tempUserModel);
+                await _context.SaveChangesAsync();
+                return Ok("New User Created");
+
+            }
+            return BadRequest(ModelState);
+
+
+
         }
 
 
@@ -51,7 +62,7 @@ namespace api_with_mongodb.Controllers
         {
             IActionResult response = Unauthorized("Invalid Credentials");
 
-            var userExists = await _context.Users.AnyAsync(appUser => appUser.USERNAME == loginDto.UserName && appUser.Password == loginDto.Password);
+            var userExists = await _context.Users.AnyAsync(appUser => appUser.Username == loginDto.UserName && appUser.Password == loginDto.Password);
 
             if (userExists)
             {

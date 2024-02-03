@@ -13,6 +13,7 @@
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Humanizer.dll
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/MessagePack.dll
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/MessagePack.Annotations.dll
+/Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Microsoft.Build.dll
@@ -275,6 +276,7 @@
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.csproj.CoreCompileInputs.cache
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.MvcApplicationPartsAssemblyInfo.cs
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.MvcApplicationPartsAssemblyInfo.cache
+/Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.sourcelink.json
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/staticwebassets.build.json
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/staticwebassets.development.json
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/staticwebassets/msbuild.api_with_mongodb.Microsoft.AspNetCore.StaticWebAssets.props
@@ -289,5 +291,3 @@
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.pdb
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.genruntimeconfig.cache
 /Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/ref/api_with_mongodb.dll
-/Users/apple/development/Development/Dot Net Core/api_with_mongodb/obj/Debug/net7.0/api_with_mongodb.sourcelink.json
-/Users/apple/development/Development/Dot Net Core/api_with_mongodb/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
